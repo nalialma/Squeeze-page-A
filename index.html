@@ -3,52 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Servicios profesionales de construcción con diseño y calidad garantizadas. Transformamos espacios, construimos sueños.">
-    <meta name="keywords" content="construcción, servicios construcción, proyectos, reforma, obra">
-    <meta name="author" content="Constructora Premium">
-    <meta property="og:title" content="Constructora Premium - Servicios Profesionales">
-    <meta property="og:description" content="Transformamos espacios, construimos sueños. Servicios de construcción de calidad.">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="/og-image.jpg">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#1a1612">
-    
-    <!-- SCHEMA MARKUP - JSON-LD -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Constructora Premium",
-      "description": "Servicios profesionales de construcción",
-      "url": "https://tudominio.com",
-      "telephone": "+54XXXXXXXXX",
-      "email": "contacto@constructora.com",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Tu Calle 123",
-        "addressLocality": "Tu Ciudad",
-        "addressRegion": "Tu Provincia",
-        "postalCode": "CP",
-        "addressCountry": "AR"
-      },
-      "image": "/logo.jpg",
-      "areaServed": "AR",
-      "priceRange": "$$",
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        "opens": "09:00",
-        "closes": "18:00"
-      }
-    }
-    </script>
-
-    <title>Constructora Premium | Servicios Profesionales de Construcción</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>Domina IA - Guía Completa de Inteligencia Artificial</title>
     <style>
         * {
             margin: 0;
@@ -56,55 +11,462 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --primary-dark: #1a1612;
-            --secondary-dark: #2a241f;
-            --accent-warm: #d4845c;
-            --accent-light: #e8c4a8;
-            --text-dark: #1a1612;
-            --text-light: #7a7470;
-            --bg-light: #f9f7f4;
-            --border-subtle: #e8e3dd;
-            --success: #2d6a3e;
-            --error: #c73e1d;
-            --transition: cubic-bezier(0.4, 0.0, 0.2, 1);
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: 'Cormorant Garamond', serif;
-            line-height: 1.7;
-            color: var(--text-dark);
-            background: linear-gradient(135deg, #f9f7f4 0%, #f3ede6 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            animation: slideDown 0.8s ease-out;
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 20px;
+            opacity: 0.95;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        /* Left Side - Value Proposition */
+        .benefits-section {
+            color: white;
+        }
+
+        .benefits-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            animation: slideInLeft 0.6s ease-out backwards;
+        }
+
+        .benefit-card:nth-child(1) { animation-delay: 0.2s; }
+        .benefit-card:nth-child(2) { animation-delay: 0.4s; }
+        .benefit-card:nth-child(3) { animation-delay: 0.6s; }
+        .benefit-card:nth-child(4) { animation-delay: 0.8s; }
+
+        .benefit-card:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+        }
+
+        .benefit-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .benefit-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            flex-shrink: 0;
+        }
+
+        .benefit-card p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Right Side - Signup Form */
+        .form-section {
             position: relative;
         }
 
-        /* ANIMACIONES GLOBALES */
-        @keyframes floatSmooth {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
+        .form-container {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.9) 100%);
+            border-radius: 30px;
+            padding: 50px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: slideInRight 0.8s ease-out;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.5);
         }
 
-        @keyframes shimmer {
-            0% { background-position: -1000px 0; }
-            100% { background-position: 1000px 0; }
+        .form-header {
+            text-align: center;
+            margin-bottom: 40px;
         }
 
-        @keyframes slideInUp {
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .form-header h3 {
+            color: #667eea;
+            font-size: 28px;
+            margin-bottom: 10px;
         }
 
-        @keyframes slideInDown {
+        .form-header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            animation: fadeIn 0.6s ease-out backwards;
+        }
+
+        .form-group:nth-child(3) { animation-delay: 0.2s; }
+        .form-group:nth-child(4) { animation-delay: 0.4s; }
+        .form-group:nth-child(5) { animation-delay: 0.6s; }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 14px;
+            font-family: inherit;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            background: white;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .checkbox-group label {
+            margin: 0;
+            cursor: pointer;
+            color: #666;
+            font-weight: normal;
+            font-size: 13px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+
+        .guarantee {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+        }
+
+        /* Stats Section */
+        .stats-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 40px;
+            margin-bottom: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-card {
+            text-align: center;
+            color: white;
+            animation: scaleIn 0.6s ease-out backwards;
+        }
+
+        .stat-card:nth-child(1) { animation-delay: 0s; }
+        .stat-card:nth-child(2) { animation-delay: 0.2s; }
+        .stat-card:nth-child(3) { animation-delay: 0.4s; }
+        .stat-card:nth-child(4) { animation-delay: 0.6s; }
+
+        .stat-number {
+            font-size: 48px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #fff, #f0f0f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .stat-label {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        /* Interactive Elements */
+        .chart-container {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 30px;
+            margin-bottom: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .chart-container h3 {
+            color: white;
+            margin-bottom: 30px;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .interactive-chart {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            height: 250px;
+            gap: 15px;
+        }
+
+        .chart-bar {
+            flex: 1;
+            background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+            border-radius: 15px 15px 0 0;
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            min-height: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .chart-bar:hover {
+            transform: scaleY(1.1);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .chart-bar-label {
+            position: absolute;
+            bottom: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 12px;
+            white-space: nowrap;
+            font-weight: 600;
+        }
+
+        .chart-bar-value {
+            position: absolute;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .chart-bar:hover .chart-bar-value {
+            opacity: 1;
+        }
+
+        /* Features Grid */
+        .features-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            padding: 40px;
+            margin-bottom: 50px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            animation: slideUp 0.8s ease-out;
+        }
+
+        .features-section h2 {
+            color: white;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-box {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 25px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            animation: scaleIn 0.6s ease-out backwards;
+        }
+
+        .feature-box:nth-child(1) { animation-delay: 0s; }
+        .feature-box:nth-child(2) { animation-delay: 0.2s; }
+        .feature-box:nth-child(3) { animation-delay: 0.4s; }
+        .feature-box:nth-child(4) { animation-delay: 0.6s; }
+        .feature-box:nth-child(5) { animation-delay: 0.8s; }
+        .feature-box:nth-child(6) { animation-delay: 1s; }
+
+        .feature-box:hover {
+            transform: translateY(-10px);
+            border-color: #667eea;
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+        }
+
+        .feature-emoji {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .feature-box h4 {
+            color: #667eea;
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        .feature-box p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* Image Section */
+        .image-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .image-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 25px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+            animation: slideUp 0.8s ease-out backwards;
+            height: 250px;
+        }
+
+        .image-card:nth-child(1) { animation-delay: 0s; }
+        .image-card:nth-child(2) { animation-delay: 0.2s; }
+        .image-card:nth-child(3) { animation-delay: 0.4s; }
+
+        .image-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255, 255, 255, 0.5);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 64px;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .image-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5));
+            color: white;
+            padding: 15px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.8);
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 12px;
+        }
+
+        /* Animations */
+        @keyframes slideDown {
             from {
                 opacity: 0;
                 transform: translateY(-30px);
@@ -115,1728 +477,389 @@
             }
         }
 
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes glow {
-            0%, 100% {
-                box-shadow: 0 0 20px rgba(212, 132, 92, 0.3);
+            from {
+                opacity: 0;
             }
-            50% {
-                box-shadow: 0 0 40px rgba(212, 132, 92, 0.6);
+            to {
+                opacity: 1;
             }
         }
 
-        @keyframes colorShift {
-            0% { color: var(--text-dark); }
-            50% { color: var(--accent-warm); }
-            100% { color: var(--text-dark); }
-        }
-
-        @keyframes brickPattern {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
-        }
-
-        /* HEADER STICKY */
-        header {
-            background: rgba(26, 22, 18, 0.95);
-            backdrop-filter: blur(10px);
-            color: white;
-            padding: 1.2rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            border-bottom: 1px solid rgba(232, 196, 168, 0.1);
-            animation: slideInDown 0.6s var(--transition);
-        }
-
-        nav {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 2rem;
-        }
-
-        .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent-warm) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            letter-spacing: 1px;
-            cursor: pointer;
-            transition: all 0.4s var(--transition);
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .logo:hover {
-            transform: scale(1.05) rotate(-1deg);
-        }
-
-        .logo-icon {
-            width: 32px;
-            height: 32px;
-            animation: floatSmooth 3s ease-in-out infinite;
-        }
-
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2.5rem;
-            align-items: center;
-        }
-
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-            font-size: 0.95rem;
-            position: relative;
-            transition: all 0.3s var(--transition);
-        }
-
-        .nav-links a::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--accent-warm);
-            transition: width 0.4s var(--transition);
-        }
-
-        .nav-links a:hover::after {
-            width: 100%;
-        }
-
-        .mobile-menu-toggle {
-            display: none;
-            background: none;
-            border: none;
-            color: white;
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
-
-        /* HERO SECTION */
-        .hero {
-            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
-            color: white;
-            padding: 8rem 2rem;
-            text-align: center;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            background: radial-gradient(circle, rgba(212, 132, 92, 0.08) 0%, transparent 70%);
-            border-radius: 50%;
-            top: -200px;
-            right: -200px;
-            animation: floatSmooth 8s ease-in-out infinite;
-        }
-
-        .hero::after {
-            content: '';
-            position: absolute;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(232, 196, 168, 0.05) 0%, transparent 70%);
-            border-radius: 50%;
-            bottom: -150px;
-            left: -150px;
-            animation: floatSmooth 10s ease-in-out infinite reverse;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 900px;
-            animation: fadeIn 1s var(--transition) 0.3s both;
-        }
-
-        .hero h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 4.5rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            line-height: 1.1;
-            background: linear-gradient(135deg, #fff 0%, var(--accent-light) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: slideInUp 0.8s var(--transition) 0.2s both;
-        }
-
-        .hero p {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.4rem;
-            margin-bottom: 2.5rem;
-            color: rgba(255, 255, 255, 0.85);
-            line-height: 1.9;
-            font-weight: 300;
-            animation: slideInUp 0.8s var(--transition) 0.4s both;
-        }
-
-        .hero-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            animation: slideInUp 0.8s var(--transition) 0.6s both;
-        }
-
-        .cta-button {
-            padding: 1rem 2.5rem;
-            border-radius: 50px;
-            border: 2px solid transparent;
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.4s var(--transition);
-            text-decoration: none;
-            display: inline-block;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .cta-primary {
-            background: linear-gradient(135deg, var(--accent-warm) 0%, var(--accent-light) 100%);
-            color: white;
-            box-shadow: 0 8px 30px rgba(212, 132, 92, 0.3);
-        }
-
-        .cta-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(212, 132, 92, 0.5);
-        }
-
-        .cta-secondary {
-            background: transparent;
-            color: white;
-            border: 2px solid var(--accent-warm);
-        }
-
-        .cta-secondary:hover {
-            background: var(--accent-warm);
-            color: white;
-            transform: translateY(-3px);
-        }
-
-        /* SVG ANIMADOS */
-        .svg-container {
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            top: 50%;
-            right: 5%;
-            transform: translateY(-50%);
-            opacity: 0.3;
-            z-index: 0;
-        }
-
-        .svg-container svg {
-            width: 100%;
-            height: 100%;
-            animation: floatSmooth 6s ease-in-out infinite;
-        }
-
-        @media (max-width: 1024px) {
-            .svg-container {
-                display: none;
-            }
-        }
-
-        /* SECCIONES */
-        section {
-            padding: 6rem 2rem;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 3.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 1rem;
-            color: var(--text-dark);
-            position: relative;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            font-size: 1.2rem;
-            color: var(--text-light);
-            margin-bottom: 4rem;
-            font-weight: 300;
-        }
-
-        .section-title::after {
-            content: '';
-            display: block;
-            width: 120px;
-            height: 4px;
-            background: linear-gradient(90deg, var(--accent-warm) 0%, var(--accent-light) 100%);
-            margin: 1.5rem auto 0;
-            border-radius: 2px;
-        }
-
-        /* GALERÍA DE PROYECTOS */
-        #proyectos {
-            background: linear-gradient(135deg, var(--bg-light) 0%, #f3ede6 100%);
-        }
-
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .project-card {
-            background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 8px 30px rgba(26, 22, 18, 0.08);
-            transition: all 0.5s var(--transition);
-            cursor: pointer;
-            position: relative;
-            border: 1px solid var(--border-subtle);
-            animation: slideInUp 0.6s var(--transition) forwards;
-            opacity: 0;
-        }
-
-        .project-card:nth-child(1) { animation-delay: 0.1s; }
-        .project-card:nth-child(2) { animation-delay: 0.2s; }
-        .project-card:nth-child(3) { animation-delay: 0.3s; }
-        .project-card:nth-child(4) { animation-delay: 0.4s; }
-
-        .project-card:hover {
-            transform: translateY(-12px) scale(1.02);
-            box-shadow: 0 20px 50px rgba(212, 132, 92, 0.2);
-            border-color: var(--accent-warm);
-        }
-
-        .project-image {
-            position: relative;
-            height: 280px;
-            background: linear-gradient(135deg, var(--accent-light) 0%, var(--accent-warm) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            font-size: 120px;
-        }
-
-        .project-image::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: repeating-linear-gradient(
-                45deg,
-                rgba(255, 255, 255, 0.1) 0px,
-                rgba(255, 255, 255, 0.1) 2px,
-                transparent 2px,
-                transparent 4px
-            );
-            animation: brickPattern 20s linear infinite;
-        }
-
-        .project-image-content {
-            position: relative;
-            z-index: 2;
-            animation: floatSmooth 4s ease-in-out infinite;
-        }
-
-        .project-info {
-            padding: 2rem;
-        }
-
-        .project-category {
-            color: var(--accent-warm);
-            font-size: 0.85rem;
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 0.8rem;
-        }
-
-        .project-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 0.8rem;
-            color: var(--text-dark);
-        }
-
-        .project-description {
-            color: var(--text-light);
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-            font-size: 0.95rem;
-        }
-
-        .project-link {
-            display: inline-block;
-            color: var(--accent-warm);
-            text-decoration: none;
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            font-size: 0.9rem;
-            position: relative;
-            transition: all 0.3s var(--transition);
-        }
-
-        .project-link::after {
-            content: '→';
-            margin-left: 0.5rem;
-            transition: all 0.3s var(--transition);
-        }
-
-        .project-link:hover::after {
-            transform: translateX(5px);
-        }
-
-        /* LIGHTBOX */
-        .lightbox {
+        /* Success Message */
+        .success-message {
             display: none;
             position: fixed;
-            z-index: 2000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(26, 22, 18, 0.95);
-            animation: fadeIn 0.3s var(--transition);
-        }
-
-        .lightbox.active {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .lightbox-content {
-            position: relative;
-            max-width: 90vw;
-            max-height: 90vh;
-            animation: slideInUp 0.4s var(--transition);
-        }
-
-        .lightbox-image {
-            max-width: 100%;
-            max-height: 90vh;
-            border-radius: 12px;
-        }
-
-        .lightbox-close {
-            position: absolute;
-            top: -40px;
-            right: 0;
-            font-size: 2.5rem;
-            color: white;
-            cursor: pointer;
-            transition: all 0.3s var(--transition);
-            background: none;
-            border: none;
-            z-index: 2001;
-        }
-
-        .lightbox-close:hover {
-            transform: rotate(90deg);
-            color: var(--accent-warm);
-        }
-
-        .lightbox-nav {
-            position: absolute;
             top: 50%;
-            transform: translateY(-50%);
-            background: rgba(212, 132, 92, 0.7);
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: linear-gradient(135deg, #667eea, #764ba2);
             color: white;
-            border: none;
-            padding: 1rem 1.5rem;
-            cursor: pointer;
-            font-size: 1.5rem;
-            transition: all 0.3s var(--transition);
-            border-radius: 50px;
-            z-index: 2001;
-        }
-
-        .lightbox-nav:hover {
-            background: var(--accent-warm);
-            transform: translateY(-50%) scale(1.1);
-        }
-
-        .lightbox-prev {
-            left: 20px;
-        }
-
-        .lightbox-next {
-            right: 20px;
-        }
-
-        /* TESTIMONIOS */
-        #testimonios {
-            background: linear-gradient(135deg, white 0%, var(--bg-light) 100%);
-        }
-
-        .testimonios-container {
-            position: relative;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .testimonios-wrapper {
-            overflow: hidden;
-            border-radius: 12px;
-        }
-
-        .testimonio-card {
-            background: white;
-            padding: 3rem;
-            border-radius: 12px;
-            border-left: 5px solid var(--accent-warm);
-            box-shadow: 0 8px 30px rgba(26, 22, 18, 0.08);
-            animation: slideInUp 0.6s var(--transition);
-            min-height: 300px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .testimonio-content {
-            margin-bottom: 2rem;
-        }
-
-        .testimonio-text {
-            font-size: 1.2rem;
-            color: var(--text-dark);
-            margin-bottom: 1.5rem;
-            font-style: italic;
-            line-height: 1.9;
-        }
-
-        .testimonio-stars {
-            display: flex;
-            gap: 0.3rem;
-            margin-bottom: 1rem;
-        }
-
-        .star {
-            color: #ffc107;
-            font-size: 1.3rem;
-        }
-
-        .testimonio-author {
-            display: flex;
-            gap: 1rem;
-            align-items: center;
-        }
-
-        .testimonio-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: linear-gradient(135deg, var(--accent-warm) 0%, var(--accent-light) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-
-        .testimonio-info h4 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.1rem;
-            color: var(--text-dark);
-        }
-
-        .testimonio-info p {
-            color: var(--text-light);
-            font-size: 0.9rem;
-        }
-
-        .empty-testimonios {
+            padding: 40px;
+            border-radius: 20px;
             text-align: center;
-            padding: 3rem;
-            color: var(--text-light);
-        }
-
-        /* FORMULARIO DE TESTIMONIOS */
-        .testimonio-form-wrapper {
-            max-width: 600px;
-            margin: 3rem auto 0;
-            padding: 2.5rem;
-            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
-            border-radius: 12px;
-            color: white;
-        }
-
-        .testimonio-form-wrapper h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .testimonio-form-wrapper p {
-            color: rgba(255, 255, 255, 0.8);
-            margin-bottom: 2rem;
-        }
-
-        .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-family: 'Inter', sans-serif;
-            font-weight: 500;
-            color: white;
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            width: 100%;
-            padding: 0.8rem;
-            border: 1px solid rgba(232, 196, 168, 0.3);
-            border-radius: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1rem;
-            transition: all 0.3s var(--transition);
-        }
-
-        .form-group input::placeholder,
-        .form-group textarea::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            background: rgba(255, 255, 255, 0.2);
-            border-color: var(--accent-warm);
-            box-shadow: 0 0 0 3px rgba(212, 132, 92, 0.2);
-        }
-
-        .form-group textarea {
-            resize: vertical;
-            min-height: 120px;
-        }
-
-        .rating-group {
-            display: flex;
-            gap: 0.8rem;
-        }
-
-        .rating-star {
-            font-size: 2rem;
-            cursor: pointer;
-            transition: all 0.3s var(--transition);
-            opacity: 0.3;
-        }
-
-        .rating-star:hover,
-        .rating-star.active {
-            opacity: 1;
-            transform: scale(1.2);
-        }
-
-        .submit-button {
-            width: 100%;
-            padding: 1rem;
-            background: linear-gradient(135deg, var(--accent-warm) 0%, var(--accent-light) 100%);
-            color: white;
-            border: none;
-            border-radius: 50px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: all 0.4s var(--transition);
-            box-shadow: 0 8px 30px rgba(212, 132, 92, 0.3);
-        }
-
-        .submit-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 40px rgba(212, 132, 92, 0.5);
-        }
-
-        .submit-button:disabled {
-            opacity: 0.6;
-            cursor: not-allowed;
-            transform: none;
-        }
-
-        .success-message {
-            background: rgba(45, 106, 62, 0.2);
-            border: 1px solid rgba(45, 106, 62, 0.5);
-            color: #a8d5ba;
-            padding: 1rem;
-            border-radius: 8px;
-            margin-bottom: 1.5rem;
-            display: none;
-            font-family: 'Inter', sans-serif;
-            animation: slideInUp 0.4s var(--transition);
+            z-index: 1000;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: scaleIn 0.5s ease-out;
         }
 
         .success-message.show {
             display: block;
         }
 
-        /* BOTÓN WHATSAPP FLOTANTE */
-        .whatsapp-button {
+        .success-message h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .success-message p {
+            font-size: 16px;
+            opacity: 0.95;
+        }
+
+        .overlay {
+            display: none;
             position: fixed;
-            bottom: 30px;
-            right: 30px;
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            text-decoration: none;
-            font-size: 2rem;
-            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.3);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
             z-index: 999;
-            animation: floatSmooth 3s ease-in-out infinite;
-            transition: all 0.4s var(--transition);
-            border: 3px solid white;
         }
 
-        .whatsapp-button:hover {
-            transform: translateY(-8px) scale(1.1);
-            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.5);
+        .overlay.show {
+            display: block;
         }
 
-        .whatsapp-tooltip {
-            position: absolute;
-            right: 90px;
-            background: var(--primary-dark);
-            color: white;
-            padding: 0.8rem 1.2rem;
-            border-radius: 50px;
-            font-family: 'Inter', sans-serif;
-            font-size: 0.9rem;
-            white-space: nowrap;
-            opacity: 0;
-            pointer-events: none;
-            transition: all 0.3s var(--transition);
-            animation: slideInUp 0.3s var(--transition);
-        }
-
-        .whatsapp-button:hover .whatsapp-tooltip {
-            opacity: 1;
-            right: 100px;
-        }
-
-        /* SECCIÓN CONTACTO */
-        #contacto {
-            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
-            color: white;
-        }
-
-        #contacto .section-title {
-            color: white;
-        }
-
-        #contacto .section-title::after {
-            background: linear-gradient(90deg, var(--accent-warm) 0%, var(--accent-light) 100%);
-        }
-
-        .contacto-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            margin-top: 3rem;
-        }
-
-        .contacto-info-group {
-            display: flex;
-            flex-direction: column;
-            gap: 2.5rem;
-        }
-
-        .contact-item {
-            display: flex;
-            gap: 1.5rem;
-        }
-
-        .contact-icon {
-            width: 60px;
-            height: 60px;
-            background: rgba(212, 132, 92, 0.2);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.8rem;
-            flex-shrink: 0;
-            transition: all 0.4s var(--transition);
-        }
-
-        .contact-item:hover .contact-icon {
-            background: var(--accent-warm);
-            transform: scale(1.1) rotate(10deg);
-        }
-
-        .contact-text h4 {
-            margin-bottom: 0.3rem;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.2rem;
-        }
-
-        .contact-text p {
-            color: rgba(255, 255, 255, 0.8);
-            font-size: 0.95rem;
-        }
-
-        /* FORMULARIO CONTACTO */
-        .contacto-form {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(10px);
-            padding: 2.5rem;
-            border-radius: 12px;
-            border: 1px solid rgba(232, 196, 168, 0.2);
-        }
-
-        .contacto-form .form-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .contacto-form .form-group label {
-            color: white;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .contacto-form input,
-        .contacto-form textarea {
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(232, 196, 168, 0.3);
-            color: white;
-        }
-
-        .contacto-form input::placeholder,
-        .contacto-form textarea::placeholder {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-        /* FOOTER */
-        footer {
-            background: rgba(26, 22, 18, 0.8);
-            color: white;
-            padding: 3rem 2rem;
-            text-align: center;
-            border-top: 1px solid rgba(232, 196, 168, 0.1);
-        }
-
-        .footer-content {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin: 1.5rem 0;
-            flex-wrap: wrap;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .footer-links a {
-            color: rgba(255, 255, 255, 0.8);
-            text-decoration: none;
-            transition: all 0.3s var(--transition);
-        }
-
-        .footer-links a:hover {
-            color: var(--accent-warm);
-        }
-
-        .footer-text {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.9rem;
-            margin-top: 2rem;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 1024px) {
-            .hero {
-                padding: 5rem 2rem;
-                min-height: 600px;
-            }
-
-            .hero h1 {
-                font-size: 3.5rem;
-            }
-
-            .contacto-grid {
-                grid-template-columns: 1fr;
-                gap: 3rem;
-            }
-
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
+        /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-
-            .hero p {
-                font-size: 1.1rem;
-            }
-
-            .hero {
-                padding: 3rem 1.5rem;
-                min-height: 500px;
-            }
-
-            .nav-links {
-                gap: 1rem;
-            }
-
-            .section-title {
-                font-size: 2.5rem;
-            }
-
-            section {
-                padding: 4rem 1.5rem;
-            }
-
-            .gallery-grid {
+            .main-content {
                 grid-template-columns: 1fr;
+                gap: 30px;
             }
 
-            .mobile-menu-toggle {
-                display: block;
+            header h1 {
+                font-size: 32px;
             }
 
-            .nav-links {
-                position: absolute;
-                top: 60px;
-                left: 0;
-                right: 0;
-                background: var(--primary-dark);
-                flex-direction: column;
-                gap: 1.5rem;
-                padding: 2rem;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.4s var(--transition);
+            .form-container {
+                padding: 30px;
             }
 
-            .nav-links.active {
-                max-height: 400px;
+            .benefits-section h2 {
+                font-size: 24px;
             }
 
-            .whatsapp-button {
-                width: 60px;
-                height: 60px;
-                font-size: 1.5rem;
-                bottom: 20px;
-                right: 20px;
-            }
-
-            .lightbox-nav {
-                padding: 0.8rem 1rem;
-                font-size: 1.2rem;
-            }
-
-            .testimonio-form-wrapper {
-                padding: 1.5rem;
-            }
-
-            .hero-buttons {
-                gap: 1rem;
-            }
-
-            .cta-button {
-                padding: 0.8rem 1.8rem;
-                font-size: 0.9rem;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-
-            .logo {
-                font-size: 1.3rem;
-            }
-
-            .project-image {
+            .interactive-chart {
                 height: 200px;
-                font-size: 80px;
             }
 
-            .testimonio-card {
-                padding: 1.5rem;
-                min-height: auto;
-            }
-
-            .whatsapp-button {
-                width: 50px;
-                height: 50px;
-                font-size: 1.2rem;
-            }
-
-            .lightbox-nav {
-                padding: 0.6rem 0.8rem;
-                font-size: 1rem;
-                top: 50%;
-            }
-
-            .hero-buttons {
-                flex-direction: column;
-            }
-
-            .cta-button {
-                width: 100%;
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <nav>
-            <div class="logo" onclick="scrollToSection('inicio')">
-                <svg class="logo-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="20" y="60" width="20" height="20" fill="currentColor"/>
-                    <rect x="50" y="60" width="20" height="20" fill="currentColor"/>
-                    <rect x="80" y="60" width="20" height="20" fill="currentColor"/>
-                    <polygon points="50,10 85,40 15,40" fill="currentColor"/>
-                </svg>
-                Constructora
-            </div>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">☰</button>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🚀 Domina la Inteligencia Artificial</h1>
+            <p>Aprende de expertos y transforma tu carrera en 2025</p>
+        </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero" id="inicio">
-        <div class="svg-container">
-            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <!-- Grúa de construcción -->
-                <line x1="100" y1="20" x2="100" y2="100" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
-                <line x1="100" y1="40" x2="160" y2="40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-                <circle cx="100" cy="20" r="8" fill="currentColor"/>
-                <rect x="155" y="35" width="15" height="40" fill="currentColor" opacity="0.7"/>
-                <!-- Edificios -->
-                <g opacity="0.6">
-                    <rect x="20" y="120" width="30" height="70" fill="currentColor"/>
-                    <rect x="25" y="125" width="5" height="5" fill="white"/>
-                    <rect x="40" y="125" width="5" height="5" fill="white"/>
-                    <rect x="25" y="138" width="5" height="5" fill="white"/>
-                    <rect x="40" y="138" width="5" height="5" fill="white"/>
-                </g>
-            </svg>
-        </div>
-
-        <div class="hero-content">
-            <h1>Transformamos Espacios, Construimos Sueños</h1>
-            <p>Servicios profesionales de construcción con diseño innovador, materiales de calidad y compromiso con la excelencia.</p>
-            <div class="hero-buttons">
-                <a href="#proyectos" class="cta-button cta-primary">Ver Proyectos</a>
-                <a href="#contacto" class="cta-button cta-secondary">Solicitar Cotización</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROYECTOS CON GALERÍA -->
-    <section id="proyectos">
-        <h2 class="section-title">Nuestros Proyectos Destacados</h2>
-        <p class="section-subtitle">Explora nuestra galería de obras realizadas con excelencia y profesionalismo</p>
-
-        <div class="gallery-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="project-image-content">🏢</div>
-                </div>
-                <div class="project-info">
-                    <span class="project-category">Edificios</span>
-                    <h3 class="project-title">Edificio Residencial Premium</h3>
-                    <p class="project-description">Construcción de edificio residencial de 8 pisos con amenidades de lujo y arquitectura contemporánea.</p>
-                    <a href="#" class="project-link" onclick="openLightbox(0); return false;">Ver galería</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="project-image-content">🏠</div>
-                </div>
-                <div class="project-info">
-                    <span class="project-category">Viviendas</span>
-                    <h3 class="project-title">Casa de Diseño Moderno</h3>
-                    <p class="project-description">Vivienda unifamiliar con diseño contemporáneo, sostenible y eficiente energéticamente.</p>
-                    <a href="#" class="project-link" onclick="openLightbox(1); return false;">Ver galería</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="project-image-content">🏪</div>
-                </div>
-                <div class="project-info">
-                    <span class="project-category">Comercial</span>
-                    <h3 class="project-title">Centro Comercial</h3>
-                    <p class="project-description">Complejo comercial de 5000m² con diseño innovador y espacios multifuncionales.</p>
-                    <a href="#" class="project-link" onclick="openLightbox(2); return false;">Ver galería</a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-image">
-                    <div class="project-image-content">🏗️</div>
-                </div>
-                <div class="project-info">
-                    <span class="project-category">Reformas</span>
-                    <h3 class="project-title">Reforma Integral</h3>
-                    <p class="project-description">Rehabilitación completa de inmueble antiguo con estándares modernos y sostenibles.</p>
-                    <a href="#" class="project-link" onclick="openLightbox(3); return false;">Ver galería</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- LIGHTBOX -->
-        <div class="lightbox" id="lightbox">
-            <div class="lightbox-content">
-                <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
-                <button class="lightbox-nav lightbox-prev" onclick="prevLightbox()">❮</button>
-                <img class="lightbox-image" id="lightboxImage" src="" alt="Proyecto">
-                <button class="lightbox-nav lightbox-next" onclick="nextLightbox()">❯</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- TESTIMONIOS -->
-    <section id="testimonios">
-        <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
-        <p class="section-subtitle">Testimonios reales de proyectos completados con éxito</p>
-
-        <div class="testimonios-container">
-            <div class="testimonios-wrapper" id="testimoniosWrapper">
-                <div class="empty-testimonios" id="emptyState">
-                    <p style="font-size: 1.1rem; margin-bottom: 1rem;">Aún no hay testimonios. ¡Sé el primero en compartir tu experiencia!</p>
-                </div>
-            </div>
-
-            <div class="testimonio-form-wrapper">
-                <h3>Comparte Tu Experiencia</h3>
-                <p>Tu opinión es importante para nosotros y ayuda a otros clientes a confiar en nuestro trabajo.</p>
-
-                <div class="success-message" id="successMessage">
-                    ✓ ¡Gracias! Tu testimonio ha sido enviado con éxito. Aparecerá en breve en nuestro sitio.
-                </div>
-
-                <form id="testimonioForm" onsubmit="enviarTestimonio(event)">
-                    <div class="form-group">
-                        <label for="testi-nombre">Nombre Completo *</label>
-                        <input type="text" id="testi-nombre" name="nombre" placeholder="Tu nombre" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="testi-email">Email *</label>
-                        <input type="email" id="testi-email" name="email" placeholder="tu@email.com" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="testi-empresa">Empresa o Proyecto</label>
-                        <input type="text" id="testi-empresa" name="empresa" placeholder="Nombre de tu empresa o proyecto (opcional)">
-                    </div>
-
-                    <div class="form-group">
-                        <label>Tu Calificación *</label>
-                        <div class="rating-group" id="ratingGroup">
-                            <span class="rating-star" onclick="setRating(1)">⭐</span>
-                            <span class="rating-star" onclick="setRating(2)">⭐</span>
-                            <span class="rating-star" onclick="setRating(3)">⭐</span>
-                            <span class="rating-star" onclick="setRating(4)">⭐</span>
-                            <span class="rating-star" onclick="setRating(5)">⭐</span>
-                        </div>
-                        <input type="hidden" id="testi-rating" name="rating" value="0" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="testi-texto">Tu Testimonio *</label>
-                        <textarea id="testi-texto" name="texto" placeholder="Cuéntanos tu experiencia con nosotros..." required></textarea>
-                    </div>
-
-                    <button type="submit" class="submit-button" id="submitTestimonio">Enviar Testimonio</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto">
-        <h2 class="section-title">Contacta Con Nosotros</h2>
-        <p class="section-subtitle">¿Tienes un proyecto en mente? Estamos listos para hacerlo realidad.</p>
-
-        <div class="contacto-grid">
-            <div class="contacto-info-group">
-                <div class="contact-item">
-                    <div class="contact-icon">📍</div>
-                    <div class="contact-text">
-                        <h4>Ubicación</h4>
-                        <p>Completa con tu dirección</p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <div class="contact-text">
-                        <h4>Email</h4>
-                        <p><a href="mailto:contacto@constructora.com" style="color: rgba(255,255,255,0.8);">contacto@constructora.com</a></p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">📞</div>
-                    <div class="contact-text">
-                        <h4>Teléfono</h4>
-                        <p><a href="tel:+5400000000" style="color: rgba(255,255,255,0.8);">+54 (XXX) XXX-XXXX</a></p>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">⏰</div>
-                    <div class="contact-text">
-                        <h4>Horario</h4>
-                        <p>Lunes - Viernes: 9:00 - 18:00<br>Sábado: 10:00 - 14:00</p>
-                    </div>
-                </div>
-            </div>
-
-            <form class="contacto-form" id="contactoForm" onsubmit="enviarContacto(event)">
-                <div class="form-group">
-                    <label for="nombre">Nombre Completo *</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="+54 (XXX) XXX-XXXX">
-                </div>
-
-                <div class="form-group">
-                    <label for="asunto">Asunto *</label>
-                    <input type="text" id="asunto" name="asunto" placeholder="¿En qué podemos ayudarte?" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="mensaje">Mensaje *</label>
-                    <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
-                </div>
-
-                <button type="submit" class="submit-button" id="submitContacto">Enviar Mensaje</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- BOTÓN WHATSAPP FLOTANTE -->
-    <a href="https://wa.me/5400000000?text=Hola%20Constructora%20Premium%20quiero%20conocer%20sus%20servicios" class="whatsapp-button" target="_blank" rel="noopener noreferrer">
-        <span class="whatsapp-tooltip">¡Escríbenos por WhatsApp!</span>
-        💬
-    </a>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-content">
-            <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 1rem;">Constructora Premium</h3>
-
-            <div class="footer-links">
-                <a href="#inicio">Inicio</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#testimonios">Testimonios</a>
-                <a href="#contacto">Contacto</a>
-                <a href="#privacidad">Privacidad</a>
-            </div>
-
-            <div class="footer-text">
-                <p>&copy; 2024 Constructora Premium. Todos los derechos reservados.</p>
-                <p style="margin-top: 1rem; font-size: 0.85rem;">Diseñado con ❤️ para tus proyectos de construcción</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- GOOGLE SHEETS WEBHOOK (Usar Formspree o Make.com) -->
-    <script>
-        // ============================================
-        // VARIABLES Y CONFIGURACIÓN
-        // ============================================
-        
-        let currentLightboxIndex = 0;
-        let testimonios = [];
-        let ratingActual = 0;
-
-        // Imágenes para el lightbox (reemplazar con URLs reales)
-        const projectImages = [
-            ['🏢', '🏢', '🏢'],
-            ['🏠', '🏠', '🏠'],
-            ['🏪', '🏪', '🏪'],
-            ['🏗️', '🏗️', '🏗️']
-        ];
-
-        // ============================================
-        // MENÚ MÓVIL
-        // ============================================
-        
-        document.getElementById('mobileMenuToggle').addEventListener('click', () => {
-            document.getElementById('navLinks').classList.toggle('active');
-        });
-
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.getElementById('navLinks').classList.remove('active');
-            });
-        });
-
-        // ============================================
-        // SCROLL SUAVE
-        // ============================================
-        
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        // ============================================
-        // LIGHTBOX DE GALERÍA
-        // ============================================
-        
-        function openLightbox(projectIndex) {
-            currentLightboxIndex = 0;
-            updateLightboxImage(projectIndex);
-            document.getElementById('lightbox').classList.add('active');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeLightbox() {
-            document.getElementById('lightbox').classList.remove('active');
-            document.body.style.overflow = 'auto';
-        }
-
-        function nextLightbox() {
-            if (currentLightboxIndex < projectImages[0].length - 1) {
-                currentLightboxIndex++;
-                const projectIndex = Array.from(document.querySelectorAll('.project-card')).findIndex(
-                    card => card.querySelector('.project-link').onclick.toString().includes(currentLightboxIndex.toString())
-                );
-                updateLightboxImage(projectIndex || 0);
-            }
-        }
-
-        function prevLightbox() {
-            if (currentLightboxIndex > 0) {
-                currentLightboxIndex--;
-            }
-        }
-
-        function updateLightboxImage(projectIndex) {
-            const emoji = projectImages[projectIndex][currentLightboxIndex];
-            const img = document.getElementById('lightboxImage');
-            img.textContent = emoji;
-            img.style.fontSize = '200px';
-            img.style.textAlign = 'center';
-            img.style.lineHeight = '400px';
-        }
-
-        // Cerrar lightbox con ESC
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') closeLightbox();
-            if (e.key === 'ArrowRight') nextLightbox();
-            if (e.key === 'ArrowLeft') prevLightbox();
-        });
-
-        // ============================================
-        // SISTEMA DE TESTIMONIOS CON GOOGLE SHEETS
-        // ============================================
-        
-        function setRating(stars) {
-            document.getElementById('testi-rating').value = stars;
-            document.querySelectorAll('.rating-star').forEach((star, index) => {
-                if (index < stars) {
-                    star.classList.add('active');
-                } else {
-                    star.classList.remove('active');
-                }
-            });
-        }
-
-        async function enviarTestimonio(event) {
-            event.preventDefault();
-
-            const nombre = document.getElementById('testi-nombre').value;
-            const email = document.getElementById('testi-email').value;
-            const empresa = document.getElementById('testi-empresa').value;
-            const rating = document.getElementById('testi-rating').value;
-            const texto = document.getElementById('testi-texto').value;
-
-            if (!rating) {
-                alert('Por favor selecciona una calificación');
-                return;
-            }
-
-            const submitBtn = document.getElementById('submitTestimonio');
-            submitBtn.disabled = true;
-            submitBtn.innerText = 'Enviando...';
-
-            try {
-                // OPCIÓN 1: Usar Formspree (gratuito)
-                // 1. Reemplaza 'YOUR_FORMSPREE_ID' con tu ID de Formspree en formspree.io
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Left Side: Benefits -->
+            <div class="benefits-section">
+                <h2>¿Por qué elegir nuestros cursos?</h2>
                 
-                const formData = new FormData();
-                formData.append('nombre', nombre);
-                formData.append('email', email);
-                formData.append('empresa', empresa);
-                formData.append('rating', rating);
-                formData.append('texto', texto);
-                formData.append('tipo', 'testimonio');
+                <div class="benefit-card">
+                    <h3><span class="benefit-icon">🎯</span> Contenido 100% Práctico</h3>
+                    <p>Aprende con proyectos reales y casos de uso que puedes implementar inmediatamente en tu trabajo.</p>
+                </div>
 
-                // Opción A: Formspree (recomendado)
-                const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
-                    method: 'POST',
-                    body: formData
-                });
+                <div class="benefit-card">
+                    <h3><span class="benefit-icon">👨‍🏫</span> Instructores Expertos</h3>
+                    <p>Profesionales con +10 años de experiencia en IA y machine learning trabajando en empresas líderes.</p>
+                </div>
 
-                // Opción B: Make.com webhook (si tienes configurado)
-                // const response = await fetch('https://hook.make.com/YOUR_WEBHOOK_ID', {
-                //     method: 'POST',
-                //     body: JSON.stringify({ nombre, email, empresa, rating, texto })
-                // });
+                <div class="benefit-card">
+                    <h3><span class="benefit-icon">📊</span> Certificación Reconocida</h3>
+                    <p>Obtén un certificado profesional que te abrirá puertas en las mejores empresas tech.</p>
+                </div>
 
-                if (response.ok || response.status === 200) {
-                    // Agregar testimonio localmente
-                    const nuevoTestimonio = {
-                        nombre,
-                        empresa: empresa || 'Cliente',
-                        rating: parseInt(rating),
-                        texto,
-                        avatar: nombre.charAt(0).toUpperCase(),
-                        fecha: new Date().toLocaleDateString('es-AR')
-                    };
+                <div class="benefit-card">
+                    <h3><span class="benefit-icon">🤝</span> Comunidad Activa</h3>
+                    <p>Conecta con miles de estudiantes, networking y oportunidades de colaboración incluidas.</p>
+                </div>
+            </div>
 
-                    testimonios.push(nuevoTestimonio);
-                    mostrarTestimonios();
-
-                    // Mostrar mensaje de éxito
-                    const successMsg = document.getElementById('successMessage');
-                    successMsg.classList.add('show');
-
-                    // Limpiar formulario
-                    document.getElementById('testimonioForm').reset();
-                    setRating(0);
-
-                    setTimeout(() => {
-                        successMsg.classList.remove('show');
-                    }, 5000);
-                } else {
-                    alert('Error al enviar. Intenta de nuevo.');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Error de conexión. Verifica tu internet.');
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.innerText = 'Enviar Testimonio';
-            }
-        }
-
-        function mostrarTestimonios() {
-            const wrapper = document.getElementById('testimoniosWrapper');
-            const empty = document.getElementById('emptyState');
-
-            if (testimonios.length === 0) {
-                wrapper.innerHTML = '<div class="empty-testimonios"><p style="font-size: 1.1rem; margin-bottom: 1rem;">Aún no hay testimonios. ¡Sé el primero en compartir tu experiencia!</p></div>';
-            } else {
-                wrapper.innerHTML = testimonios.map(t => `
-                    <div class="testimonio-card">
-                        <div class="testimonio-content">
-                            <div class="testimonio-stars">
-                                ${'⭐'.repeat(t.rating)}
-                            </div>
-                            <p class="testimonio-text">"${t.texto}"</p>
-                        </div>
-                        <div class="testimonio-author">
-                            <div class="testimonio-avatar">${t.avatar}</div>
-                            <div class="testimonio-info">
-                                <h4>${t.nombre}</h4>
-                                <p>${t.empresa}</p>
-                            </div>
-                        </div>
+            <!-- Right Side: Signup Form -->
+            <div class="form-section">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h3>Acceso Gratuito</h3>
+                        <p>Recibe tu ebook + masterclass de bienvenida</p>
                     </div>
-                `).join('');
-            }
-        }
 
-        // ============================================
-        // FORMULARIO DE CONTACTO
-        // ============================================
-        
-        async function enviarContacto(event) {
-            event.preventDefault();
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre Completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
 
-            const nombre = document.getElementById('nombre').value;
-            const email = document.getElementById('email').value;
-            const telefono = document.getElementById('telefono').value;
-            const asunto = document.getElementById('asunto').value;
-            const mensaje = document.getElementById('mensaje').value;
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
 
-            const submitBtn = document.getElementById('submitContacto');
-            submitBtn.disabled = true;
-            submitBtn.innerText = 'Enviando...';
+                        <div class="form-group">
+                            <label for="telefono">Teléfono (Opcional)</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
 
-            try {
-                const formData = new FormData();
-                formData.append('nombre', nombre);
-                formData.append('email', email);
-                formData.append('telefono', telefono);
-                formData.append('asunto', asunto);
-                formData.append('mensaje', mensaje);
-                formData.append('tipo', 'contacto');
+                        <div class="form-group">
+                            <label for="interes">¿Cuál es tu nivel? *</label>
+                            <select id="interes" name="interes" required>
+                                <option value="">-- Selecciona una opción --</option>
+                                <option value="Principiante">Principiante</option>
+                                <option value="Intermedio">Intermedio</option>
+                                <option value="Avanzado">Avanzado</option>
+                            </select>
+                        </div>
 
-                // Enviar a Formspree
-                const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
-                    method: 'POST',
-                    body: formData
-                });
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terminos" name="terminos" required>
+                            <label for="terminos">Acepto los términos y condiciones y recibir información sobre cursos</label>
+                        </div>
 
-                if (response.ok) {
-                    alert('¡Mensaje enviado! Nos pondremos en contacto pronto.');
-                    document.getElementById('contactoForm').reset();
-                } else {
-                    alert('Error al enviar. Intenta de nuevo.');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Error de conexión. Intenta de nuevo.');
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.innerText = 'Enviar Mensaje';
-            }
-        }
+                        <button type="submit" class="submit-btn">Descargar Ebook Gratis</button>
 
-        // ============================================
-        // ANIMACIONES AL HACER SCROLL
-        // ============================================
-        
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
+                        <div class="guarantee">
+                            ✓ Sin spam • ✓ Cancelar en cualquier momento • ✓ Privacidad garantizada
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
 
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    observer.unobserve(entry.target);
+        <!-- Stats Section -->
+        <div class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">15,000+</div>
+                    <div class="stat-label">Estudiantes Activos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">95%</div>
+                    <div class="stat-label">Tasa de Satisfacción</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Cursos Disponibles</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Soporte al Cliente</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interactive Chart -->
+        <div class="chart-container">
+            <h3>📈 Crecimiento de Habilidades (12 semanas)</h3>
+            <div class="interactive-chart">
+                <div class="chart-bar" style="height: 20%;">
+                    <div class="chart-bar-value">Semana 1</div>
+                    <div class="chart-bar-label">Fundamentos</div>
+                </div>
+                <div class="chart-bar" style="height: 35%;">
+                    <div class="chart-bar-value">Semana 3</div>
+                    <div class="chart-bar-label">Básico</div>
+                </div>
+                <div class="chart-bar" style="height: 55%;">
+                    <div class="chart-bar-value">Semana 6</div>
+                    <div class="chart-bar-label">Intermedio</div>
+                </div>
+                <div class="chart-bar" style="height: 75%;">
+                    <div class="chart-bar-value">Semana 9</div>
+                    <div class="chart-bar-label">Avanzado</div>
+                </div>
+                <div class="chart-bar" style="height: 95%;">
+                    <div class="chart-bar-value">Semana 12</div>
+                    <div class="chart-bar-label">Experto</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Grid -->
+        <div class="features-section">
+            <h2>Lo Que Incluye Tu Acceso Gratuito</h2>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <div class="feature-emoji">📚</div>
+                    <h4>Ebook de 100 Páginas</h4>
+                    <p>Guía completa sobre fundamentos de IA y aplicaciones prácticas en la industria.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-emoji">🎥</div>
+                    <h4>Masterclass en Video</h4>
+                    <p>Sesión de 90 minutos exclusiva con nuestro instructor principal.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-emoji">💻</div>
+                    <h4>Código y Recursos</h4>
+                    <p>Acceso a repositorios con código listo para usar y templates profesionales.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-emoji">🎁</div>
+                    <h4>Descuentos Exclusivos</h4>
+                    <p>Hasta 50% de descuento en nuestros cursos premium para nuevos miembros.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-emoji">🔔</div>
+                    <h4>Notificaciones Priority</h4>
+                    <p>Sé el primero en enterarte de nuevos cursos, workshops y eventos especiales.</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-emoji">🏆</div>
+                    <h4>Certificado Digital</h4>
+                    <p>Demuestra tus logros con nuestro certificado verificable en LinkedIn.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Showcase -->
+        <div class="image-showcase">
+            <div class="image-card">
+                <div class="image-placeholder">🤖</div>
+                <div class="image-label">Proyectos Reales</div>
+            </div>
+            <div class="image-card">
+                <div class="image-placeholder">📊</div>
+                <div class="image-label">Data Science</div>
+            </div>
+            <div class="image-card">
+                <div class="image-placeholder">🧠</div>
+                <div class="image-label">Deep Learning</div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2025 Academia IA. Todos los derechos reservados. | Política de Privacidad | Términos de Servicio</p>
+        </footer>
+    </div>
+
+    <!-- Success Message -->
+    <div class="overlay" id="overlay"></div>
+    <div class="success-message" id="successMessage">
+        <h2>¡Éxito! 🎉</h2>
+        <p>Revisa tu correo para descargar el ebook y acceder a la masterclass.</p>
+    </div>
+
+    <script>
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = {
+                nombre: document.getElementById('nombre').value,
+                email: document.getElementById('email').value,
+                telefono: document.getElementById('telefono').value,
+                interes: document.getElementById('interes').value,
+                fecha: new Date().toLocaleString('es-ES')
+            };
+
+            // Log data (en producción, enviar a servidor)
+            console.log('Datos del formulario:', formData);
+
+            // Show success message
+            document.getElementById('overlay').classList.add('show');
+            document.getElementById('successMessage').classList.add('show');
+
+            // Reset form
+            this.reset();
+
+            // Hide success message after 4 seconds
+            setTimeout(() => {
+                document.getElementById('overlay').classList.remove('show');
+                document.getElementById('successMessage').classList.remove('show');
+            }, 4000);
+        });
+
+        // Cerrar modal al hacer click en overlay
+        document.getElementById('overlay').addEventListener('click', function() {
+            this.classList.remove('show');
+            document.getElementById('successMessage').classList.remove('show');
+        });
+
+        // Chart bar interactivity
+        const chartBars = document.querySelectorAll('.chart-bar');
+        chartBars.forEach((bar, index) => {
+            bar.addEventListener('click', function() {
+                console.log(`Semana ${(index + 1) * 3}: ${this.style.height}`);
+            });
+        });
+
+        // Smooth scroll for links
+        document.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
                 }
             });
-        }, observerOptions);
-
-        document.querySelectorAll('.project-card, .testimonio-card').forEach(el => {
-            observer.observe(el);
         });
-
-        // ============================================
-        // SMOOTH SCROLL HEADER EFFECT
-        // ============================================
-        
-        let lastScrollTop = 0;
-        const header = document.querySelector('header');
-
-        window.addEventListener('scroll', () => {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            
-            if (scrollTop > 50) {
-                header.style.boxShadow = '0 8px 30px rgba(26, 22, 18, 0.15)';
-            } else {
-                header.style.boxShadow = 'none';
-            }
-
-            lastScrollTop = scrollTop;
-        });
-
-        // ============================================
-        // ANIMACIÓN DE CONTADOR
-        // ============================================
-        
-        function animateCounter(element, target, duration = 2000) {
-            let current = 0;
-            const increment = target / (duration / 16);
-            
-            const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    element.textContent = target;
-                    clearInterval(timer);
-                } else {
-                    element.textContent = Math.floor(current);
-                }
-            }, 16);
-        }
-
-        // ============================================
-        // INICIALIZACIÓN
-        // ============================================
-        
-        document.addEventListener('DOMContentLoaded', () => {
-            mostrarTestimonios();
-            
-            // Cargar testimonios desde localStorage (si los hay)
-            const testimoniosGuardados = localStorage.getItem('testimonios');
-            if (testimoniosGuardados) {
-                testimonios = JSON.parse(testimoniosGuardados);
-                mostrarTestimonios();
-            }
-        });
-
-        // Guardar testimonios en localStorage cada vez que se agregue uno
-        const originalEnviarTestimonio = window.enviarTestimonio;
-        window.enviarTestimonio = async function(event) {
-            event.preventDefault();
-            
-            const nombre = document.getElementById('testi-nombre').value;
-            const email = document.getElementById('testi-email').value;
-            const empresa = document.getElementById('testi-empresa').value;
-            const rating = document.getElementById('testi-rating').value;
-            const texto = document.getElementById('testi-texto').value;
-
-            if (!rating) {
-                alert('Por favor selecciona una calificación');
-                return;
-            }
-
-            const submitBtn = document.getElementById('submitTestimonio');
-            submitBtn.disabled = true;
-            submitBtn.innerText = 'Enviando...';
-
-            try {
-                const formData = new FormData();
-                formData.append('nombre', nombre);
-                formData.append('email', email);
-                formData.append('empresa', empresa);
-                formData.append('rating', rating);
-                formData.append('texto', texto);
-                formData.append('tipo', 'testimonio');
-
-                // Enviar a Formspree
-                const response = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                if (response.ok || response.status === 200) {
-                    const nuevoTestimonio = {
-                        nombre,
-                        empresa: empresa || 'Cliente',
-                        rating: parseInt(rating),
-                        texto,
-                        avatar: nombre.charAt(0).toUpperCase()
-                    };
-
-                    testimonios.push(nuevoTestimonio);
-                    localStorage.setItem('testimonios', JSON.stringify(testimonios));
-                    mostrarTestimonios();
-
-                    const successMsg = document.getElementById('successMessage');
-                    successMsg.classList.add('show');
-
-                    document.getElementById('testimonioForm').reset();
-                    setRating(0);
-
-                    setTimeout(() => {
-                        successMsg.classList.remove('show');
-                    }, 5000);
-                } else {
-                    alert('Error al enviar. Intenta de nuevo.');
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Error de conexión. Intenta de nuevo.');
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.innerText = 'Enviar Testimonio';
-            }
-        };
-
-        // Hacer funcionar el ligtbox con swipe en móvil
-        let touchStartX = 0;
-        let touchEndX = 0;
-
-        document.getElementById('lightbox').addEventListener('touchstart', (e) => {
-            touchStartX = e.changedTouches[0].screenX;
-        });
-
-        document.getElementById('lightbox').addEventListener('touchend', (e) => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        });
-
-        function handleSwipe() {
-            if (touchStartX - touchEndX > 50) {
-                nextLightbox();
-            }
-            if (touchEndX - touchStartX > 50) {
-                prevLightbox();
-            }
-        }
     </script>
 </body>
 </html>
